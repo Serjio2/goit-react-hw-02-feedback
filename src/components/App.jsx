@@ -1,7 +1,11 @@
+import { Feedback } from "./Feedback/Feedback";
+import { GlobalStyle } from "./GlobalStyle";
+
 export const App = () => {
   return (
-    <div>
-      React homework template
-    </div>
+    <>
+      <GlobalStyle/>
+      <Feedback/>
+    </>
   );
 };
