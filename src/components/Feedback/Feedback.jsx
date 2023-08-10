@@ -1,12 +1,19 @@
-import { FeedbackOptions } from "components/FeedbackOptions/FeedbackOptions"
+import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
 
-export const Feedback = ({onClickGood, onClickNeutral, onClickBad}) => {
-  
-    return (
-        <div>
-            <h2>Please leave feedback</h2>
-            <FeedbackOptions onClickGood={onClickGood} onClickNeutral={onClickNeutral} onClickBad={onClickBad}/>
-        </div>
-    )
-    
-}
+export const Feedback = ({
+  onClickGood,
+  onClickNeutral,
+  onClickBad,
+  title,
+}) => {
+  return (
+    <>
+      <h2>{title}</h2>
+      <FeedbackOptions
+        onClickGood={onClickGood}
+        onClickNeutral={onClickNeutral}
+        onClickBad={onClickBad}
+      />
+    </>
+  );
+};
