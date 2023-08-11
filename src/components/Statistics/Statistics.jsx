@@ -1,4 +1,4 @@
-import { Feedback } from "./Statistics.styled";
+// import { Feedback } from "./Statistics.styled";
 
 export const Statistics = ({
   good,

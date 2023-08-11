@@ -1,9 +1,14 @@
-export const FeedbackOptions = ({onClickGood, onClickNeutral, onClickBad}) => {
+export const FeedbackOptions = ({
+  options,
+  onLeaveFeedback,
+}) => {
   return (
     <>
-      <button onClick={onClickGood}>Good</button>
-      <button onClick={onClickNeutral}>Neutral</button>
-      <button onClick={onClickBad}>Bad</button>
+      {Object.keys(options).map(item => (
+        <button type="button" name={item} onClick={onLeaveFeedback}>
+          {item.replace(item[0], item[0].toUpperCase())}
+        </button>
+      ))}
     </>
   );
 };
