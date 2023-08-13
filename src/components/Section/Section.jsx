@@ -1,10 +1,10 @@
-import { Sections } from "./Section.styled";
+import { StyledSections } from "./Section.styled";
 
 export const Section = ({ title, children }) => {
   return (
-    <Sections>
+    <StyledSections>
       <h2>{title}</h2>
       {children}
-    </Sections>
+    </StyledSections>
   );
 };

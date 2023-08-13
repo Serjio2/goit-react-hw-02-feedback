@@ -7,7 +7,7 @@ export const Feedback = ({
 }) => {
   return (
     <>
-      <h2>{title}</h2>
+      <>{title}</>
       <FeedbackOptions
       options={options}
       onLeaveFeedback={onLeaveFeedback}
